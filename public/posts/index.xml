@@ -13,8 +13,23 @@
       <link>http://localhost:1313/posts/my-first-post/</link>
       <pubDate>Tue, 06 Aug 2024 04:57:18 +0700</pubDate>
       <guid>http://localhost:1313/posts/my-first-post/</guid>
+      <description>Introduction HIII Halooo HIII haloo test</description>
+    </item>
+    <item>
+      <title>yang kedua</title>
+      <link>http://localhost:1313/posts/second-post/</link>
+      <pubDate>Sun, 06 Aug 2023 04:57:18 +0700</pubDate>
+      <guid>http://localhost:1313/posts/second-post/</guid>
       <description>Introduction This is bold text, and this is emphasized text.
-KOCAK GAMING </description>
+KOCAK GAMING</description>
+    </item>
+    <item>
+      <title>yg ketiga</title>
+      <link>http://localhost:1313/posts/third-post/</link>
+      <pubDate>Sun, 06 Aug 2023 04:57:18 +0700</pubDate>
+      <guid>http://localhost:1313/posts/third-post/</guid>
+      <description>Introduction This is bold text, and this is emphasized text.
+KOCAK GAMING</description>
     </item>
   </channel>
 </rss>

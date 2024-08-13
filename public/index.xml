@@ -6,14 +6,37 @@
     <description>Recent content on Pandu Akhbar</description>
     <generator>Hugo -- 0.131.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 06 Aug 2024 04:57:18 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 13 Aug 2024 04:57:18 +0700</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About Me</title>
+      <link>http://localhost:1313/aboutme/</link>
+      <pubDate>Tue, 13 Aug 2024 04:57:18 +0700</pubDate>
+      <guid>http://localhost:1313/aboutme/</guid>
+      <description>“I saw my life branching out before me like the green fig tree in the story. From the tip of every branch, like a fat purple fig, a wonderful future beckoned and winked. One fig was a husband and a happy home and children, and another fig was a famous poet and another fig was a brilliant professor, and another fig was Ee Gee, the amazing editor, and another fig was Europe and Africa and South America, and another fig was Constantin and Socrates and Attila and a pack of other lovers with queer names and offbeat professions, and another fig was an Olympic lady crew champion, and beyond and above these figs were many more figs I couldn&amp;rsquo;t quite make out.</description>
+    </item>
     <item>
       <title>My First Post</title>
       <link>http://localhost:1313/posts/my-first-post/</link>
       <pubDate>Tue, 06 Aug 2024 04:57:18 +0700</pubDate>
       <guid>http://localhost:1313/posts/my-first-post/</guid>
       <description>Introduction HIII Halooo HIII haloo test</description>
+    </item>
+    <item>
+      <title>yang kedua</title>
+      <link>http://localhost:1313/posts/second-post/</link>
+      <pubDate>Sun, 06 Aug 2023 04:57:18 +0700</pubDate>
+      <guid>http://localhost:1313/posts/second-post/</guid>
+      <description>Introduction This is bold text, and this is emphasized text.
+KOCAK GAMING</description>
+    </item>
+    <item>
+      <title>yg ketiga</title>
+      <link>http://localhost:1313/posts/third-post/</link>
+      <pubDate>Sun, 06 Aug 2023 04:57:18 +0700</pubDate>
+      <guid>http://localhost:1313/posts/third-post/</guid>
+      <description>Introduction This is bold text, and this is emphasized text.
+KOCAK GAMING</description>
     </item>
   </channel>
 </rss>
