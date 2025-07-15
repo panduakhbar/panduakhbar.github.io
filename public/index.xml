@@ -4,32 +4,25 @@
     <title>Pandu Akhbar</title>
     <link>http://localhost:1313/</link>
     <description>Recent content on Pandu Akhbar</description>
-    <generator>Hugo -- 0.131.0</generator>
+    <generator>Hugo -- 0.123.7</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 06 Aug 2024 04:57:18 +0700</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lily</title>
+      <link>http://localhost:1313/posts/lily/</link>
+      <pubDate>Tue, 06 Aug 2024 04:57:18 +0700</pubDate>
+      <guid>http://localhost:1313/posts/lily/</guid>
+      <description>my lily I hope today, you stopped to feel the wind on your skin. I hope today you paused for even a moment—to feel sunlight, to take a breath between chapters of your busy life. I love you.
+I hope you know that even in chaos, the world holds moments meant only for you. I love you.
+We live in places so far apart the seasons forget to sync, and yet I feel you with me.</description>
+    </item>
     <item>
       <title>My First Post</title>
       <link>http://localhost:1313/posts/my-first-post/</link>
       <pubDate>Tue, 06 Aug 2024 04:57:18 +0700</pubDate>
       <guid>http://localhost:1313/posts/my-first-post/</guid>
       <description>Introduction HIII Halooo HIII haloo test</description>
-    </item>
-    <item>
-      <title>yang kedua</title>
-      <link>http://localhost:1313/posts/second-post/</link>
-      <pubDate>Sun, 06 Aug 2023 04:57:18 +0700</pubDate>
-      <guid>http://localhost:1313/posts/second-post/</guid>
-      <description>Introduction This is bold text, and this is emphasized text.
-KOCAK GAMING</description>
-    </item>
-    <item>
-      <title>yg ketiga</title>
-      <link>http://localhost:1313/posts/third-post/</link>
-      <pubDate>Sun, 06 Aug 2023 04:57:18 +0700</pubDate>
-      <guid>http://localhost:1313/posts/third-post/</guid>
-      <description>Introduction This is bold text, and this is emphasized text.
-KOCAK GAMING</description>
     </item>
     <item>
       <title>About Me</title>

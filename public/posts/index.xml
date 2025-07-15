@@ -4,7 +4,7 @@
     <title>Posts on Pandu Akhbar</title>
     <link>http://localhost:1313/posts/</link>
     <description>Recent content in Posts on Pandu Akhbar</description>
-    <generator>Hugo -- 0.131.0</generator>
+    <generator>Hugo -- 0.123.7</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 06 Aug 2024 04:57:18 +0700</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
@@ -14,22 +14,6 @@
       <pubDate>Tue, 06 Aug 2024 04:57:18 +0700</pubDate>
       <guid>http://localhost:1313/posts/my-first-post/</guid>
       <description>Introduction HIII Halooo HIII haloo test</description>
-    </item>
-    <item>
-      <title>yang kedua</title>
-      <link>http://localhost:1313/posts/second-post/</link>
-      <pubDate>Sun, 06 Aug 2023 04:57:18 +0700</pubDate>
-      <guid>http://localhost:1313/posts/second-post/</guid>
-      <description>Introduction This is bold text, and this is emphasized text.
-KOCAK GAMING</description>
-    </item>
-    <item>
-      <title>yg ketiga</title>
-      <link>http://localhost:1313/posts/third-post/</link>
-      <pubDate>Sun, 06 Aug 2023 04:57:18 +0700</pubDate>
-      <guid>http://localhost:1313/posts/third-post/</guid>
-      <description>Introduction This is bold text, and this is emphasized text.
-KOCAK GAMING</description>
     </item>
   </channel>
 </rss>
