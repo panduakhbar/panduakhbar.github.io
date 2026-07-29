@@ -1,27 +1,2 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Posts on Pandu Akhbar</title>
-    <link>http://localhost:1314/posts/</link>
-    <description>Recent content in Posts on Pandu Akhbar</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 29 Jul 2026 21:32:59 +0700</lastBuildDate>
-    <atom:link href="http://localhost:1314/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>How to Train RF-DETR for Oil Palm Tree Detection in Aerial Imagery</title>
-      <link>http://localhost:1314/posts/rfdetr/</link>
-      <pubDate>Wed, 29 Jul 2026 21:32:59 +0700</pubDate>
-      <guid>http://localhost:1314/posts/rfdetr/</guid>
-      <description>&lt;p&gt;RF-DETR adalah model object detection berbasis transformer yang dapat digunakan untuk mendeteksi dan mengenali objek pada suatu gambar. Dalam artikel ini, saya akan membahas proses training RF-DETR menggunakan dataset kustom, mulai dari persiapan dataset hingga menghasilkan model yang siap digunakan, khususnya dalam bidang geospasial. Studi kasus yang digunakan adalah deteksi pohon kelapa sawit pada &lt;em&gt;aerial imagery&lt;/em&gt; atau citra udara.&lt;/p&gt;
-&lt;p&gt;Berdasarkan benchmark, RF-DETR &lt;a href=&#34;https://blog.roboflow.com/best-object-detection-models/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;lebih unggul&lt;/a&gt; dibandingkan model object detection lain, seperti YOLO11 dan YOLO26. Untuk mempelajari RF-DETR lebih lanjut, dokumentasi dan source code-nya dapat dilihat di &lt;a href=&#34;https://github.com/roboflow/rf-detr&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;repositori GitHub resmi RF-DETR&lt;/a&gt;.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>My First Post</title>
-      <link>http://localhost:1314/posts/my-first-post/</link>
-      <pubDate>Tue, 06 Aug 2024 04:57:18 +0700</pubDate>
-      <guid>http://localhost:1314/posts/my-first-post/</guid>
-      <description>&lt;p&gt;Hi&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Posts on Pandu Akhbar</title><link>https://panduakhbar.github.io/posts/</link><description>Recent content in Posts on Pandu Akhbar</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 29 Jul 2026 21:32:59 +0700</lastBuildDate><atom:link href="https://panduakhbar.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>How to Train RF-DETR for Oil Palm Tree Detection in Aerial Imagery</title><link>https://panduakhbar.github.io/posts/rfdetr/</link><pubDate>Wed, 29 Jul 2026 21:32:59 +0700</pubDate><guid>https://panduakhbar.github.io/posts/rfdetr/</guid><description>&lt;p&gt;RF-DETR adalah model object detection berbasis transformer yang dapat digunakan untuk mendeteksi dan mengenali objek pada suatu gambar. Dalam artikel ini, saya akan membahas proses training RF-DETR menggunakan dataset kustom, mulai dari persiapan dataset hingga menghasilkan model yang siap digunakan, khususnya dalam bidang geospasial. Studi kasus yang digunakan adalah deteksi pohon kelapa sawit pada &lt;em&gt;aerial imagery&lt;/em&gt; atau citra udara.&lt;/p&gt;
+&lt;p&gt;Berdasarkan benchmark, RF-DETR &lt;a href="https://blog.roboflow.com/best-object-detection-models/" target="_blank" rel="noopener noreferrer"&gt;lebih unggul&lt;/a&gt; dibandingkan model object detection lain, seperti YOLO11 dan YOLO26. Untuk mempelajari RF-DETR lebih lanjut, dokumentasi dan source code-nya dapat dilihat di &lt;a href="https://github.com/roboflow/rf-detr" target="_blank" rel="noopener noreferrer"&gt;repositori GitHub resmi RF-DETR&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>My First Post</title><link>https://panduakhbar.github.io/posts/my-first-post/</link><pubDate>Tue, 06 Aug 2024 04:57:18 +0700</pubDate><guid>https://panduakhbar.github.io/posts/my-first-post/</guid><description>&lt;p&gt;Hi&lt;/p&gt;</description></item></channel></rss>
