@@ -1,12 +1,12 @@
 +++
 title = 'How to Train RF-DETR for Oil Palm Tree Detection in Aerial Imagery'
 date = 2026-07-29T21:32:59+07:00
-draft = true
+draft = false
 +++
 
-RF-DETR adalah model object detection berbasis transformer yang dapat digunakan untuk mendeteksi dan mengenali objek pada suatu gambar. Dalam artikel ini, saya akan membahas proses training RF-DETR menggunakan dataset secara custom, mulai dari persiapan dataset hingga model yang siap digunakan khususnya dalam bidang geospatial. Studi kasus yang digunakan adalah deteksi pohon kelapa sawit pada _aerial imagery_ atau citra udara.
+RF-DETR adalah model object detection berbasis transformer yang dapat digunakan untuk mendeteksi dan mengenali objek pada suatu gambar. Dalam artikel ini, saya akan membahas proses training RF-DETR menggunakan dataset kustom, mulai dari persiapan dataset hingga menghasilkan model yang siap digunakan, khususnya dalam bidang geospasial. Studi kasus yang digunakan adalah deteksi pohon kelapa sawit pada _aerial imagery_ atau citra udara.
 
-Secara benchmark, RF-DETR {{< rawhtml >}}<a href="https://blog.roboflow.com/best-object-detection-models/" target="_blank" rel="noopener noreferrer">lebih unggul</a>{{< /rawhtml >}} dibandingkan model obect detection lain seperti YOLO11 dan YOLO26. Untuk mempelajari RF-DETR lebih lanjut, dokumentasi dan source code-nya dapat dilihat di {{< rawhtml >}}<a href="https://github.com/roboflow/rf-detr" target="_blank" rel="noopener noreferrer">repositori GitHub resmi RF-DETR</a>{{< /rawhtml >}}.
+Berdasarkan benchmark, RF-DETR {{< rawhtml >}}<a href="https://blog.roboflow.com/best-object-detection-models/" target="_blank" rel="noopener noreferrer">lebih unggul</a>{{< /rawhtml >}} dibandingkan model object detection lain, seperti YOLO11 dan YOLO26. Untuk mempelajari RF-DETR lebih lanjut, dokumentasi dan source code-nya dapat dilihat di {{< rawhtml >}}<a href="https://github.com/roboflow/rf-detr" target="_blank" rel="noopener noreferrer">repositori GitHub resmi RF-DETR</a>{{< /rawhtml >}}.
 
 ## Understanding the Workflow
 
@@ -14,19 +14,19 @@ Secara umum, alur yang saya gunakan adalah sebagai berikut:
 
 **1. Persiapan dataset:**
 
-- Ada citra yang ingin dijadikan sebagai dataset
-- Hasil digitasi object (dalam hal ini pohon sawit)
+- Citra yang akan dijadikan dataset.
+- Hasil digitasi objek (dalam hal ini, pohon kelapa sawit).
 
 **2. Preparing the Annotations:**
 
-- Konversi hasil digitasi (`.shp`, `.geojson`, dll) ke format COCO
-- Pembagian dan pemilahan dataset
+- Konversi hasil digitasi (`.shp`, `.geojson`, dll.) ke format COCO.
+- Pembagian dan pemilahan dataset.
 
 **3. Training RF-DETR:**
 
-- Choosing the RF-DETR Model Variant
-- Configuring the Training Parameters
-- Monitoring Training Metrics
+- Choosing the RF-DETR Model Variant.
+- Configuring the Training Parameters.
+- Monitoring Training Metrics.
 
 **4. Running Inference**
 
@@ -38,7 +38,7 @@ Tahap pertama adalah menyiapkan citra yang akan digunakan sebagai dataset. Pada 
 
 ![Orthomosaic area perkebunan kelapa sawit](oil-palm-orthomosaic.png)
 
-Selain citra, proses ini juga membutuhkan data hasil digitasi objek pohon kelapa sawit. Digitasi dilakukan menggunakan QGIS dengan membuat bounding box pada setiap pohon yang terlihat pada citra. Hasil digitasi kemudian disimpan dalam format data vektor. Jangan lupa untuk mengisi attribute `class` pada data vektor. Dalam hal ini, saya menambahkan attribute `class` dan mengisinya dengan `palm_tree`.
+Selain citra, proses ini juga membutuhkan data hasil digitasi objek pohon kelapa sawit. Digitasi dilakukan menggunakan QGIS dengan membuat bounding box pada setiap pohon yang terlihat pada citra. Hasil digitasi kemudian disimpan dalam format data vektor. Jangan lupa untuk mengisi atribut `class` pada data vektor. Dalam hal ini, saya menambahkan atribut `class` dan mengisinya dengan `palm_tree`.
 
 Dari tahap ini, terdapat dua data utama:
 
@@ -49,7 +49,7 @@ Karena citra orthomosaic memiliki ukuran dan resolusi yang cukup besar, citra te
 
 Proses pemotongan citra, penyesuaian bounding box, dan konversi anotasi dilakukan menggunakan beberapa library seperti GeoPandas, Rasterio, NumPy, dan lainnya.
 
-Berikut adalah cuplikan script yang dapat anda gunakan sebagai referensi. Script lengkapnya juga dapat dilihat dan dijalankan melalui {{< rawhtml >}}<a href="https://colab.research.google.com/drive/1vCKbEdjOF-ad7ury50BweQg9jlb6LEvU?usp=sharing" target="_blank" rel="noopener noreferrer">Google Colab berikut</a>{{< /rawhtml >}}.
+Berikut adalah cuplikan script Python yang dapat Anda gunakan sebagai referensi. Script lengkapnya juga dapat dilihat dan dijalankan melalui {{< rawhtml >}}<a href="https://colab.research.google.com/drive/1vCKbEdjOF-ad7ury50BweQg9jlb6LEvU?usp=sharing" target="_blank" rel="noopener noreferrer">Google Colab berikut</a>{{< /rawhtml >}}.
 
 {{< codefile file="prepare_coco_dataset.py" lang="python" options="linenos=table" >}}
 
@@ -59,7 +59,7 @@ Setelah proses pemotongan citra dan konversi anotasi selesai, dataset disimpan d
 
 File ZIP kemudian diimpor ke Roboflow sebagai sebuah object detection project. Karena proses anotasi sebelumnya telah dilakukan melalui QGIS, Roboflow tidak digunakan untuk membuat bounding box dari awal. Pada tahap ini, Roboflow digunakan untuk memeriksa hasil konversi, mengelola dataset, dan memastikan bahwa setiap anotasi telah terhubung dengan gambar yang sesuai.
 
-Setelah proses import selesai, beberapa hal perlu diperiksa, antara lain:
+Setelah proses import selesai, beberapa hal perlu diperiksa:
 
 1. Bounding box berada tepat pada objek pohon kelapa sawit.
 2. Tidak terdapat bounding box yang bergeser atau terpotong secara tidak wajar.
@@ -95,7 +95,7 @@ Beberapa parameter utama juga perlu dikonfigurasi, seperti jumlah epoch, batch s
 
 Pada proses ini, saya menggunakan RF-DETR Nano dan melatih model selama 30 epoch. Dengan GPU NVIDIA T4 yang tersedia di Google Colab, proses training membutuhkan waktu kurang lebih lima jam. Hasil training sebaiknya disimpan langsung ke Google Drive agar file model, checkpoint, dan output lainnya tidak hilang ketika sesi Google Colab berakhir atau runtime terputus.
 
-Hasil evaluasi RF-DETR Nano setelah 30 epoch pada validation set.
+Berikut adalah hasil evaluasi RF-DETR Nano setelah 30 epoch pada validation set.
 
 ![Hasil evaluasi RF-DETR Nano setelah 30 epoch pada validation set](rfdetr-nano-validation-results.png)
 
@@ -103,10 +103,14 @@ Setelah proses training selesai, model terbaik tersimpan dalam file `checkpoint_
 
 ## Running Inference dan Export Hasil
 
-Salah satu tantangan dalam penggunaan RF-DETR adalah belum tersedianya plugin QGIS yang dapat langsung memuat dan menjalankan inference dari model tersebut. Sebelumnya, saat saya menggunakan YOLO, proses inference dapat dilakukan dengan lebih mudah melalui plugin {{< rawhtml >}}<a href="https://qgis-plugin-deepness.readthedocs.io/en/latest/#" target="_blank" rel="noopener noreferrer">Deepness</a>{{< /rawhtml >}} karena model dapat langsung dimuat dan dijalankan pada layer raster di interface QGIS.
+Salah satu tantangan dalam penggunaan RF-DETR adalah belum tersedianya plugin QGIS yang dapat langsung memuat dan menjalankan inference dari model tersebut. Sebelumnya, saat menggunakan YOLO, saya dapat menjalankan proses inference dengan lebih mudah melalui plugin {{< rawhtml >}}<a href="https://qgis-plugin-deepness.readthedocs.io/en/latest/#" target="_blank" rel="noopener noreferrer">Deepness</a>{{< /rawhtml >}} karena model dapat langsung dimuat dan dijalankan pada layer raster di antarmuka QGIS.
 
-Untuk RF-DETR, saya menggunakan beberapa library Python untuk memuat file `checkpoint_best_total.pth`, membaca citra, menjalankan inference, serta mengolah hasil deteksi. Secara lengkapnya dapat dilihat dan dijalankan melalui {{< rawhtml >}}<a href="https://colab.research.google.com/drive/1nnxn_hWkbS3iKohTJ1KemaFRlLqZF1rI?usp=sharing" target="_blank" rel="noopener noreferrer">link berikut</a>{{< /rawhtml >}}.
+Untuk RF-DETR, saya menggunakan beberapa library Python untuk memuat file `checkpoint_best_total.pth`, membaca citra, menjalankan inference, serta mengolah hasil deteksi. Script Python lengkapnya dapat dilihat dan dijalankan melalui {{< rawhtml >}}<a href="https://colab.research.google.com/drive/1nnxn_hWkbS3iKohTJ1KemaFRlLqZF1rI?usp=sharing" target="_blank" rel="noopener noreferrer">link berikut</a>{{< /rawhtml >}}.
 
 Sebagai alternatif, khususnya untuk citra geospasial, inference juga dapat dilakukan menggunakan modul RF-DETR dari {{< rawhtml >}}<a href="https://opengeoai.org/rfdetr/" target="_blank" rel="noopener noreferrer">OpenGeoAI</a>{{< /rawhtml >}}. Modul ini menyediakan workflow yang lebih praktis untuk tiled inference serta mengubah hasil deteksi menjadi data vektor yang dapat ditampilkan kembali di QGIS.
 
 {{< codefile file="run_rfdetr_inference.py" lang="python" options="linenos=table" >}}
+
+## Implementasi Model
+
+{{< youtube j-K9Of4vlgs >}}
