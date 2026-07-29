@@ -2,40 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on Pandu Akhbar</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>http://localhost:1314/posts/</link>
     <description>Recent content in Posts on Pandu Akhbar</description>
-    <generator>Hugo -- 0.123.7</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 29 Jul 2026 21:20:24 +0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 29 Jul 2026 21:32:59 +0700</lastBuildDate>
+    <atom:link href="http://localhost:1314/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>My New Post2</title>
-      <link>http://localhost:1313/posts/my-new-post2/</link>
-      <pubDate>Wed, 29 Jul 2026 21:20:24 +0700</pubDate>
-      <guid>http://localhost:1313/posts/my-new-post2/</guid>
-      <description>jsadnkjlsadn</description>
-    </item>
-    <item>
-      <title>My New Post</title>
-      <link>http://localhost:1313/posts/my-new-post/</link>
-      <pubDate>Wed, 29 Jul 2026 21:19:34 +0700</pubDate>
-      <guid>http://localhost:1313/posts/my-new-post/</guid>
-      <description>asdasjdoikashbfoi</description>
+      <title>How to Train RF-DETR for Oil Palm Tree Detection in Aerial Imagery</title>
+      <link>http://localhost:1314/posts/rfdetr/</link>
+      <pubDate>Wed, 29 Jul 2026 21:32:59 +0700</pubDate>
+      <guid>http://localhost:1314/posts/rfdetr/</guid>
+      <description>&lt;p&gt;RF-DETR adalah model object detection berbasis transformer yang dapat digunakan untuk mendeteksi dan mengenali objek pada suatu gambar. Dalam artikel ini, saya akan membahas proses training RF-DETR menggunakan dataset kustom, mulai dari persiapan dataset hingga menghasilkan model yang siap digunakan, khususnya dalam bidang geospasial. Studi kasus yang digunakan adalah deteksi pohon kelapa sawit pada &lt;em&gt;aerial imagery&lt;/em&gt; atau citra udara.&lt;/p&gt;
+&lt;p&gt;Berdasarkan benchmark, RF-DETR &lt;a href=&#34;https://blog.roboflow.com/best-object-detection-models/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;lebih unggul&lt;/a&gt; dibandingkan model object detection lain, seperti YOLO11 dan YOLO26. Untuk mempelajari RF-DETR lebih lanjut, dokumentasi dan source code-nya dapat dilihat di &lt;a href=&#34;https://github.com/roboflow/rf-detr&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;repositori GitHub resmi RF-DETR&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>My First Post</title>
-      <link>http://localhost:1313/posts/my-first-post/</link>
+      <link>http://localhost:1314/posts/my-first-post/</link>
       <pubDate>Tue, 06 Aug 2024 04:57:18 +0700</pubDate>
-      <guid>http://localhost:1313/posts/my-first-post/</guid>
-      <description>Introduction WOOOOOOOIIII</description>
-    </item>
-    <item>
-      <title>yg ketiga</title>
-      <link>http://localhost:1313/posts/third-post/</link>
-      <pubDate>Sun, 06 Aug 2023 04:57:18 +0700</pubDate>
-      <guid>http://localhost:1313/posts/third-post/</guid>
-      <description>Introduction This is bold text, and this is emphasized text.
-KOCAK GAMING</description>
+      <guid>http://localhost:1314/posts/my-first-post/</guid>
+      <description>&lt;p&gt;Hi&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

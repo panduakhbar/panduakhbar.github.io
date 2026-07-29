@@ -1,4 +1,6 @@
 +++
+ShowBreadCrumbs = true
+ShowShareButtons = true
 title = 'How to Train RF-DETR for Oil Palm Tree Detection in Aerial Imagery'
 date = 2026-07-29T21:32:59+07:00
 draft = false
