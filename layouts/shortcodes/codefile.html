@@ -1,0 +1,8 @@
+{{- $fileName := .Get "file" -}}
+{{- $language := .Get "lang" | default "text" -}}
+{{- $options := .Get "options" | default "linenos=table" -}}
+{{- with .Page.Resources.GetMatch $fileName -}}
+    {{- highlight .Content $language $options -}}
+{{- else -}}
+    {{- errorf "Code file %q was not found in page bundle %q" $fileName $.Page.File.Path -}}
+{{- end -}}

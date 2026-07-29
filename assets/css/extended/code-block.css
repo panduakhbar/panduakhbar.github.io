@@ -1,0 +1,4 @@
+.post-content .highlight {
+    max-height: 32rem;
+    overflow: auto;
+}
